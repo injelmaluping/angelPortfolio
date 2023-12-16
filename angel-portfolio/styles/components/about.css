@@ -1,0 +1,273 @@
+.about-container {
+  background-color: var(--second-bg-color);
+  margin-top: var(--size-6xl);
+  padding-bottom: var(--size-8xl);
+}
+
+.sub-about-wrapper {
+  padding-top: var(--size-5xl);
+}
+
+.about-contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4xl);
+}
+
+.about-contents {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-xl);
+  align-items: flex-start;
+}
+
+.about-img {
+  width: 270px;
+}
+
+.about-contents h2 {
+  font-size: var(--size-4xl);
+}
+
+.about-description-wrapper p {
+  line-height: 1.6;
+}
+
+.about-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2xl);
+}
+
+.about-resume-btn {
+  background-color: var(--main-color);
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  font-size: var(--size-sm);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .about-container {
+    background-color: var(--second-bg-color);
+    margin-top: var(--size-8xl);
+    padding-bottom: var(--size-5xl);
+  }
+  
+  .sub-about-wrapper {
+    padding-top: var(--size-5xl);
+  }
+  
+  .about-contents {
+    gap: var(--size-2xl);
+  }
+  
+  .about-img {
+    width: 425px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-5xl);
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-2xl);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .about-container {
+    background-color: var(--second-bg-color);
+    margin-top: var(--size-8xl);
+    padding-bottom: var(--size-8xl);
+  }
+
+  .about-contents-container {
+    gap: var(--size-6xl);
+    padding-top: var(--size-2xl);
+  }
+
+  .about-contents {
+    gap: var(--size-2xl);
+  }
+  
+  .about-img {
+    width: 540px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-6xl);
+  }
+
+  .about-description {
+    font-size: var(--size-lg);
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-3xl);
+  }
+
+  .about-resume-btn {
+    padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+    font-size: var(--size-base);
+  }  
+}
+
+/* md */
+@media (min-width: 768px) {
+
+  .about-container {
+    margin-top: var(--size-4xl);
+  }
+  
+  .about-contents-container {
+    gap: var(--size-2xl);
+    padding-top: var(--size-2xl);
+    flex-direction: row;
+  }
+
+  .about-contents {
+    gap: var(--size-2xl);
+  }
+  
+  .about-img {
+    width: 300px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-4xl);
+  }
+
+  .about-description {
+    font-size: var(--size-base);
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-base);
+  }
+
+  .about-resume-btn {
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    font-size: var(--size-sm);
+  }  
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+  .about-container {
+    margin-top: var(--size-6xl);
+  }
+  
+  .about-contents-container {
+    gap: var(--size-3xl);
+    padding-top: var(--size-3xl);
+  }
+
+  .about-contents {
+    gap: var(--size-2xl);
+    margin-top: var(--size-xs);
+  }
+  
+  .about-img {
+    width: 450px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-5xl);
+  }
+
+  .about-description {
+    font-size: var(--size-lg);
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-2xl);
+  }
+
+  .about-resume-btn {
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    font-size: var(--size-base);
+  }  
+}
+
+/* xl */
+@media (min-width: 1280px) {
+
+  .about-container {
+    margin-top: var(--size-9xl);
+    padding-bottom: var(--size-9xl);
+  }
+  
+  .about-contents-container {
+    gap: var(--size-4xl);
+    padding-top: var(--size-5xl);
+  }
+
+  .about-contents {
+    gap: var(--size-4xl);
+    margin-top: var(--size-xs);
+  }
+  
+  .about-img {
+    width: 530px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-6xl);
+  }
+  
+  .about-description-wrapper p {
+    font-size: var(--size-xl);
+    line-height: 1.8;
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-3xl);
+  }
+
+  .about-resume-btn {
+    padding: 0.9rem 1.2rem 0.9rem 1.2rem;
+    font-size: var(--size-lg);
+  }  
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+
+  .about-container {
+    margin-top: var(--size-9xl);
+  }
+  
+  .about-contents-container {
+    gap: var(--size-3xl);
+    padding-top: var(--size-5xl);
+  }
+
+  .about-contents {
+    gap: var(--size-5xl);
+    margin-top: var(--size-xs);
+  }
+  
+  .about-img {
+    width: 590px;
+  }
+  
+  .about-contents h2 {
+    font-size: var(--size-7xl);
+  }
+  
+  .about-description-wrapper p {
+    font-size: var(--size-2xl);
+    line-height: 1.8;
+  }
+
+  .about-description-wrapper {
+    gap: var(--size-4xl);
+  }
+
+  .about-resume-btn {
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    font-size: var(--size-xl);
+  }  
+}

@@ -1,0 +1,131 @@
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--size-5xl);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4xl);
+}
+
+.form { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;  
+}
+
+.input-group, .textarea-group {
+    padding: 1% 0;
+}
+
+input, textarea {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid var(--main-color);
+}
+
+input::placeholder, textarea::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #757575;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
+}
+
+.textarea-group textarea {
+  position: relative;
+  top: 0.7em;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    top: -4em;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label {
+    top: -10.5em;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  background-color: var(--main-color);
+  padding: 0.4rem 4rem 0.4rem 4rem;
+  font-size: var(--size-base);
+  font-weight: 700;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .contact-btn {
+    padding: 0.8rem 6rem 0.8rem 6rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .contact-btn {
+    padding: 0.9rem 7rem 0.9rem 7rem;
+    font-size: var(--size-lg);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .contact-btn {
+    padding: 1rem 8rem 1rem 8rem;
+    font-size: var(--size-lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .contact-btn {
+    padding: 1.175rem 8.5rem 1.175rem 8.5rem;
+    font-size: var(--size-xl);
+  }
+
+  input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    top: -5em;
+  }
+
+  textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label {
+      top: -11.5em;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

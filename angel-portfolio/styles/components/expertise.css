@@ -1,0 +1,135 @@
+.expertise-container {
+  margin-top: var(--size-8xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-5xl);
+}
+
+.expertise-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-7xl);
+}
+
+.expertise {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2xl);
+  align-items: center;
+}
+
+.expertise-title {
+  font-size: var(--size-4xl);
+}
+
+.expertise-description {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) { 
+  .expertise {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3xl);
+    align-items: center;
+  }
+  
+  .expertise-title {
+    font-size: var(--size-5xl);
+  }
+  
+  .expertise-description {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 400px;
+    font-size: var(--size-lg);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .expertise-content {
+    flex-direction: row;
+    gap: var(--size-4xl);
+    margin-top: var(--size-2xl);
+  }
+  
+  .expertise {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2xl);
+    align-items: center;
+  }
+  
+  .expertise-title {
+    font-size: var(--size-3xl);
+  }
+
+  .expertise-icon {
+    width: 90px;
+  }
+  
+  .expertise-description {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 500px;
+    font-size: var(--size-sm);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .expertise-container {
+    margin-top: var(--size-9xl);
+  } 
+
+  .expertise-content {
+    margin-top: var(--size-3xl);
+  }
+  
+  .expertise-title {
+    font-size: var(--size-4xl);
+  }
+
+  .expertise-icon {
+    width: 110px;
+  }
+  
+  .expertise-description {
+    line-height: 1.6;
+    font-size: var(--size-base);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .expertise {
+    gap: var(--size-3xl);
+  }
+
+  .expertise-content {
+    margin-top: var(--size-4xl);
+    gap: var(--size-5xl);
+  }
+  
+  .expertise-title {
+    font-size: var(--size-4xl);
+  }
+
+  .expertise-icon {
+    width: 120px;
+  }
+  
+  .expertise-description {
+    line-height: 1.6;
+    font-size: var(--size-lg);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
